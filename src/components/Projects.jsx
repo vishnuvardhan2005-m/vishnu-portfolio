@@ -36,7 +36,7 @@ const projectsData = [
     fullDescription: 'Developed an online store with cart, order management, and real-time updates. Ensured quality-focused development and adherence to defined processes. Built using modern serverless technologies for scalability.',
     image: project3,
     tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Firebase', 'Firestore'],
-    liveLink: 'https://sweet-heaven-f568vaoge-vishnus-projects-b68462e2.vercel.app',
+    liveLink: 'https://sweet-heaven-psi.vercel.app/',
     repoLink: 'https://github.com/vishnuvardhan2005-m/sweet-heaven.git'
   }
 ];
