@@ -16,7 +16,7 @@ const projectsData = [
     fullDescription: 'Designed and developed a full-stack application with user and admin modules. Implemented secure authentication, CRUD operations, and role-based access control. Features product management, cart functionality, and secure checkout.',
     image: project1,
     tech: ['React.js', 'Redux', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-    liveLink: 'style-cart-lac.vercel.app',
+    liveLink: 'https://style-cart-lac.vercel.app',
     repoLink: 'https://github.com/vishnuvardhan2005-m/StyleCart.git'
   },
   {
@@ -36,7 +36,7 @@ const projectsData = [
     fullDescription: 'Developed an online store with cart, order management, and real-time updates. Ensured quality-focused development and adherence to defined processes. Built using modern serverless technologies for scalability.',
     image: project3,
     tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Firebase', 'Firestore'],
-    liveLink: 'sweet-heaven-f568vaoge-vishnus-projects-b68462e2.vercel.app',
+    liveLink: 'https://sweet-heaven-f568vaoge-vishnus-projects-b68462e2.vercel.app',
     repoLink: 'https://github.com/vishnuvardhan2005-m/sweet-heaven.git'
   }
 ];
