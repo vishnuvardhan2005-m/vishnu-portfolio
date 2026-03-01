@@ -2,6 +2,7 @@ import { useState } from 'react';
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
+import project4 from '../assets/project4.png';
 
 // Icons
 const X = () => (
@@ -38,6 +39,16 @@ const projectsData = [
     tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Firebase', 'Firestore'],
     liveLink: 'https://sweet-heaven-psi.vercel.app/',
     repoLink: 'https://github.com/vishnuvardhan2005-m/sweet-heaven.git'
+  },
+  {
+    id:4,
+    title: 'Pulse Streaming',
+    description: 'Secure multi-tenant video streaming platform with real-time processing and role-based access control.',
+    fullDescription: 'Developed a full-stack video upload and streaming platform featuring JWT-based authentication, role-based access control (Admin, Editor, Viewer), and multi-tenant data isolation. Implemented real-time video processing updates using WebSocket communication and secure streaming via HTTP Range Requests. Designed with scalable backend architecture and secure middleware-based authorization',
+    image: project4,
+    tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Firebase', 'Firestore','Socket.io','Express.js','MongoDB','JWT'],
+    liveLink: 'https://pulse-streaming-ten.vercel.app/',
+    repoLink: 'https://github.com/vishnuvardhan2005-m/Pulse-Streaming'
   }
 ];
 
