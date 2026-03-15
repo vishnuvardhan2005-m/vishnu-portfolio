@@ -111,7 +111,7 @@ const projectsData = [
       "Render Deployment",
     ],
     liveLink: "https://resume-analyzer-1-ofpg.onrender.com/",
-    repoLink: "https://github.com/vishnuvardhan2005-m/Resume-Gap-Analyzer",
+    repoLink: "https://github.com/vishnuvardhan2005-m/Resume-analyzer",
   },
 ];
 
