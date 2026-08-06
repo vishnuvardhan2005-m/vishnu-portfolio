@@ -13,23 +13,27 @@ const PenToolIcon = () => (
 );
 
 const SkillCard = ({ title, icon, skills }) => (
-  <div className="bg-white p-6 rounded-lg border border-border shadow-soft hover:shadow-card transition-all duration-300">
-    <div className="flex items-center gap-3 mb-6">
-      <div className="p-2 bg-primary/10 rounded-md text-primary">
+  <div className="group bg-white p-6 rounded-xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/40 transition-all duration-300 relative overflow-hidden">
+    {/* Top animated gradient accent line on hover */}
+    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+    <div className="flex items-center gap-3.5 mb-6">
+      <div className="p-2.5 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-2xs">
         {icon}
       </div>
-      <h3 className="text-lg font-bold text-text">{title}</h3>
+      <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">{title}</h3>
     </div>
-    <div className="space-y-5">
+
+    <div className="space-y-4">
       {skills.map((skill) => (
-        <div key={skill.name}>
-          <div className="flex justify-between mb-2">
-            <span className="text-sm font-medium text-textSecondary">{skill.name}</span>
-            <span className="text-xs text-primary font-semibold">{skill.level}%</span>
+        <div key={skill.name} className="group/item">
+          <div className="flex justify-between mb-1.5">
+            <span className="text-sm font-medium text-slate-700 group-hover/item:text-slate-900 transition-colors">{skill.name}</span>
+            <span className="text-xs text-primary font-bold group-hover/item:scale-110 transition-transform">{skill.level}%</span>
           </div>
-          <div className="w-full bg-secondary rounded-full h-1.5 overflow-hidden">
+          <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden p-0.5 border border-slate-100">
             <div 
-              className="bg-primary h-full rounded-full transition-all duration-1000 ease-out" 
+              className="bg-gradient-to-r from-blue-500 to-primary h-full rounded-full transition-all duration-1000 ease-out group-hover:brightness-110" 
               style={{ width: `${skill.level}%` }}
             ></div>
           </div>
@@ -82,11 +86,19 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-20 bg-slate-50/60">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">
-          My Skills
-        </h2>
+        <div className="text-center mb-12">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full inline-block mb-3">
+            Technical Expertise
+          </span>
+          <h2 className="text-3xl font-bold text-slate-900">
+            My Skills
+          </h2>
+          <p className="text-slate-500 text-sm mt-2 max-w-md mx-auto">
+            Technologies, frameworks, and developer tools I work with.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
@@ -97,3 +109,4 @@ export default function Skills() {
     </section>
   );
 }
+
